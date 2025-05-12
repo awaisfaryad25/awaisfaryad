@@ -1,7 +1,8 @@
 // components/global/Navbar.jsx
 import { useState } from 'react';
 import { IoIosMenu, IoIosClose  } from "react-icons/io";
-import logo from '../../assets/logo/logo.svg'
+// import logo from '../../assets/logo/awais.svg'
+import logo from '../../assets/logo/awais.svg'
 import Button from './Button';
 import MobileMenu from './MobileMenu';
 
