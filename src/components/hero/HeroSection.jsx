@@ -30,8 +30,9 @@ const HeroSection = () => (
         </div>
         <div className="md:text-lg space-y-2 mt-2 md:mt-6">
           <p>
-            Aspiring Software Developer with 6 months of experience developing web applications.
-            I thrive on tackling challenges and pushing boundaries through creativity and innovation.
+            Resourceful professional with successful track record in developing innovative web 
+            designs and features. Possesses solid knowledge of Frontend Technologies like React.js 
+            and Next.js with ability to quickly learn new technologies.
           </p>
         </div>
 

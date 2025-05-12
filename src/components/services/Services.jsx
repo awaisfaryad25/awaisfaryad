@@ -5,7 +5,7 @@ import app from '../../assets/services/app.svg'
 
 const Services = () => {
   return (
-    <div className="max-w-[85%] mx-auto px-4 py-12 md:px-12 font-sans space-y-4 md:space-y-8 bg-[#1d1d1e] rounded-2xl">
+    <div className="max-w-[85%] mx-auto px-4 py-12 md:px-12 font-sans space-y-4 md:space-y-8 bg-[#1d1d1e] rounded-2xl border border-[var(--border)]">
       <div className="text-center">
         <h2 className="text-xl font-bold text-[var(--primary)] mb-3 md:mb-4">Services</h2>
         <h3>What i'm doing</h3>

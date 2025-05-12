@@ -5,7 +5,7 @@ import Skills from './Skills';
 
 const Resume = () => {
   return (
-    <div className="max-w-[85%] mx-auto p-4 md:px-12 font-sans space-y-4 md:space-y-8 bg-[#1d1d1e] rounded-2xl">
+    <div className="max-w-[85%] mx-auto p-4 md:px-12 font-sans space-y-4 md:space-y-8 bg-[#1d1d1e] rounded-2xl border border-[var(--border)]">
       <section className="text-center mb-8">
         <h2 className="text-xl font-bold text-[var(--primary)] mb-3 md:mb-8">My Resume</h2>
         <h1 className="text-2xl md:text-4xl font-bold mb-2" >M. Awais Faryad</h1>
