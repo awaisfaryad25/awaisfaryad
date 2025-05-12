@@ -17,14 +17,14 @@ const HeroSection = () => (
       style={{ backgroundImage: `url(${banner})`, clipPath: 'polygon(100% 0%, 0% 0%, 0% 100%, 100% 65%)',}}
     />
 
-    <div className="size-full max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-8 text-white py-20">
+    <div className="size-full max-w-[85%] md:max-w-[85%] mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-8 text-white py-20">
       {/* Left Section */}
       <div className="pt-12">
-        <h1 className="relative text-9xl font-[Times_New_Roman] drop-shadow-[3px_3px_4px_#000000]">
-          <img src={m} alt="" className="absolute top-0 -left-4" /> awais
+        <h1 className="relative text-7xl md:text-9xl font-[Times_New_Roman] drop-shadow-[3px_3px_4px_#000000]">
+          <img src={m} alt="" className="size-12 md:size-20 absolute -top-2 md:top-0 -left-2 md:-left-4" /> awais
         </h1>
-        <h1 className="text-8xl leading-[5rem] font-semibold text-[var(--primary)]">FARYAD</h1>
-        <div className="md:text-lg space-y-2 mt-8">
+        <h1 className=" text-7xl md:text-8xl leading-[5rem] font-semibold text-[var(--primary)]">FARYAD</h1>
+        <div className="md:text-lg space-y-2 mt-2 md:mt-8">
           <p>A passionate FrontEnd Developer in React Js based In Lahore, PAK.</p>
           <p>
             Aspiring Software Developer with 6 months of experience developing web applications.
@@ -34,7 +34,7 @@ const HeroSection = () => (
 
         <div className="flex items-center gap-3 mt-8">
           <Button title="Hire Me" />
-          <hr className="h-1 w-60 border-gray-400" />
+          <hr className="h-1 w-full max-w-52 border-gray-400" />
           <div className="flex items-center gap-4">
             {socials.map(({ href, icon }, i) => (
               <a key={i} href={href} target="_blank"
