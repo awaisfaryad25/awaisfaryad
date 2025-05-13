@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import InputField from '../../components/global/InputField';
 import Button from '../../components/global/Button';
 import Map from './Map';
-
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
