@@ -20,7 +20,7 @@ const ContactUs = () => {
         <h2 className="text-xl font-bold text-[var(--primary)] mb-3 md:mb-4">Contact Us</h2>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
-        <div className="bg-[#222224] p-4 md:p-8 space-y-6 rounded-2xl">
+        <div className="bg-[#222224] p-4 md:p-8 space-y-6 rounded-2xl border border-[var(--border)]">
           <div className='space-y-2'>
             <h5 className="text-[var(--primary)] font-semibold">Get in touch</h5>
             <h4 className="text-white text-lg md:text-2xl font-bold">Let's Chat, Reach out to Us</h4>
@@ -44,7 +44,7 @@ const ContactUs = () => {
             <Button title="Send Message"  />
           </form>
         </div>
-        <div className="bg-[#222224] p-4 md:p-8 space-y-6 rounded-2xl">
+        <div className="bg-[#222224] p-4 md:p-8 space-y-6 rounded-2xl border border-[var(--border)]">
           <div className="bg-[#2c2c2e] p-4 rounded-3xl">
             <Map />
           </div>

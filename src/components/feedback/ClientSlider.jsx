@@ -37,13 +37,13 @@ const ClientSlider = () => {
   };
 
   return (
-    <div className="relative w-full overflow-hidden">
+    <div className="relative w-full overflow-hidden ">
       <div
         className="flex w-full transition-transform duration-500 ease-in-out"
         style={{ transform: `translateX(-${currentSlide * 100}%)` }}
       >
         {clientData.map((feedback) => (
-          <div className="flex min-w-full" key={feedback.id}>
+          <div className="flex min-w-full " key={feedback.id}>
             <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 md:w-[70%] lg:w-[55%] mx-auto">
               <div className="bg-[var(--secondary)] w-full md:col-span-2 lg:col-span-3 colLeft p-4 md:p-8 rounded-t-lg md:rounded-l-lg md:rounded-r-none">
                 <div className="h-[260px] md:size-[260px] m-auto box-content">
@@ -54,7 +54,7 @@ const ClientSlider = () => {
                   <span>{feedback.role}</span>
                 </div>
               </div>
-              <div className="w-full lg:col-span-2 p-4 md:p-8 bg-[#222224] text-start rounded-b-lg md:rounded-r-lg md:rounded-l-none">
+              <div className="w-full lg:col-span-2 p-4 md:p-8 bg-[#222224] text-start rounded-b-lg md:rounded-r-lg md:rounded-l-none border border-[var(--border)]">
                 <div className="">
                   <p>{feedback.comment}</p>
                 </div>

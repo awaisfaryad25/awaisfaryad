@@ -30,7 +30,7 @@ const Portfolio = () => {
       image: GHSE,
       link: '#',
     },
-        {
+    {
       id: 4,
       title: 'Finarch',
       description: 'A solar installation service website showcasing packages, inquiry forms, and company portfolio.',
