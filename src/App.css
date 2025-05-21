@@ -1,7 +1,6 @@
 /* @import "tailwindcss"; */
 #root {
-  max-width: 1500px;
-  margin: 0 auto;
+  
 
   --primary: #f5bd02;
   --secondary: #ff451b;

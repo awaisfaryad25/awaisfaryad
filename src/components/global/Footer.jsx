@@ -12,7 +12,7 @@ const Footer = () => {
       />
 
       <div className="relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full md:max-w-[85%] mx-auto px-8 pt-16 pb-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 w-full md:max-w-[90%] mx-auto px-8 pt-16 lg:pt-36 2xl:pt-52 pb-8">
           {/* Logo Section */}
           <div className="flex flex-col gap-4">
             <div className="flex items-center gap-4">
