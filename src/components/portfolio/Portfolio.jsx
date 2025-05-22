@@ -4,26 +4,20 @@ import projects from '../../constants/projectsData';
 import PaginationControls from '../global/PaginationControls';
 
 const Portfolio = () => {
+
   const [currentPage, setCurrentPage] = useState(1);
   const [projectsPerPage, setProjectsPerPage] = useState(4);
 
-  // Handle responsive projects per page
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth < 768) {
-        setProjectsPerPage(3); // Mobile view
+        setProjectsPerPage(3);
       } else {
-        setProjectsPerPage(4); // Desktop view
+        setProjectsPerPage(4);
       }
     };
-
-    // Initial call
     handleResize();
-
-    // Listen for resize events
     window.addEventListener('resize', handleResize);
-    
-    // Cleanup
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
@@ -38,9 +32,7 @@ const Portfolio = () => {
   return (
     <div className="max-w-[85%] mx-auto px-4 py-12 md:px-8 font-sans space-y-8 bg-[#1d1d1e] rounded-2xl border border-[var(--border)]">
       <div className="text-center">
-        <h2 className="text-xl font-bold text-[var(--primary)] mb-2 md:mb-4">
-          My Portfolio
-        </h2>
+        <h2 className="text-xl font-bold text-[var(--primary)] mb-2 md:mb-4">My Portfolio</h2>
         <h3 className="text-white text-lg">Projects I've built for my clients</h3>
       </div>
 
