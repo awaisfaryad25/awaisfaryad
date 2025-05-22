@@ -1,10 +1,14 @@
 import { useEffect } from "react";
 import { IoIosClose } from "react-icons/io";
 import Button from "./Button";
+import { Link } from 'react-router-dom';
 
-const MobileMenu = ({ isOpen, setIsOpen, menuItems }) => {
+const MobileMenu = ({ isOpen, setIsOpen, menuItems, currentPath   }) => {
 
-  // Prevent background scroll when menu is open
+  const isActive = (path) => {
+    return currentPath === path;
+  };
+
   useEffect(() => {
     document.body.style.overflow = isOpen ? "hidden" : "";
     return () => {
@@ -20,9 +24,8 @@ const MobileMenu = ({ isOpen, setIsOpen, menuItems }) => {
     >
       {/* Slide-in panel */}
       <div
-        className={`absolute top-0 right-0 h-full w-64 bg-white/20 backdrop-blur-md border-l border-white/30 px-3 py-2 transform transition-transform duration-300 ease-in-out ${
-          isOpen ? "translate-x-0" : "translate-x-full"
-        }`}
+        className={`absolute top-0 right-0 h-full w-64 bg-white/20 backdrop-blur-md border-l border-white/30 px-3 py-2 transform transition-transform duration-300 ease-in-out 
+          ${ isOpen ? "translate-x-0" : "translate-x-full"}`}
         onClick={(e) => e.stopPropagation()}
       >
         <div className="flex justify-end px-2 text-[var(--primary)]">
@@ -33,9 +36,13 @@ const MobileMenu = ({ isOpen, setIsOpen, menuItems }) => {
 
         <ul className="flex flex-col space-y-6 px-2 py-4 text-lg font-medium">
           {menuItems.map((item) => (
-            <li key={item} className="hover:text-[var(--primary)] cursor-pointer">
-              {item}
-            </li>
+            <Link key={item.name} to={item.path}
+              onClick={() => setIsOpen(false)}
+              className={`text-xl hover:text-[var(--primary)] 
+                ${ isActive(item.path) ? 'text-[var(--primary)]' : ''}`}
+            >
+              {item.name}
+            </Link>
           ))}
           <li>
             <Button title="Login/Sign" />
