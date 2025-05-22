@@ -20,6 +20,7 @@ const ContactUs = () => {
         <h2 className="text-xl font-bold text-[var(--primary)] mb-3 md:mb-4">Contact Us</h2>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
+        {/* col 1 */}
         <div className="bg-[#222224] p-4 md:p-8 space-y-6 rounded-2xl border border-[var(--border)]">
           <div className='space-y-2'>
             <h5 className="text-[var(--primary)] font-semibold">Get in touch</h5>
@@ -44,20 +45,21 @@ const ContactUs = () => {
             <Button title="Send Message"  />
           </form>
         </div>
+        {/* col 2 */}
         <div className="bg-[#222224] p-4 md:p-8 space-y-6 rounded-2xl border border-[var(--border)]">
           <div className="  rounded-3xl">
             <Map />
           </div>
           <div className=" rounded-3xl space-y-4">
-            <div className="py-3 px-6 rounded-2xl space-y-2 bg-[var(--secondary)] shadow-lg">
+            <div className="py-3 px-6 rounded-2xl md:space-y-1 bg-[var(--secondary)] shadow-lg">
               <h4 className='font-medium'>Email</h4>
               <a href="mailto:awaisfaryad25@gmail.com" className='hover:underline'>awaisfaryad25@gmail.com</a>
             </div>
-            <div className="py-3 px-6 rounded-2xl space-y-2 bg-[var(--secondary)] shadow-lg">
+            <div className="py-3 px-6 rounded-2xl space-y-1  bg-[var(--secondary)] shadow-lg">
               <h4 className='font-medium'>Phone Number</h4>
               <a href="tel:+923012525017" className="hover:underline">+92 301 2525017</a>
             </div>
-            <div className="py-3 px-6 rounded-2xl bg-[var(--secondary)] shadow-lg">
+            <div className="py-3 px-6 rounded-2xl space-y-1 bg-[var(--secondary)] shadow-lg">
               <h4 className='font-medium'>Address</h4>
               <address className='hover:underline'>Wapda Town, Lahore</address>
             </div>
