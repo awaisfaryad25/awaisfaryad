@@ -1,16 +1,35 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import ProjectCard from './ProjectCard';
 import projects from '../../constants/projectsData';
 import PaginationControls from '../global/PaginationControls';
 
-const PROJECTS_PER_PAGE = 4;
-
 const Portfolio = () => {
   const [currentPage, setCurrentPage] = useState(1);
-  const totalPages = Math.ceil(projects.length / PROJECTS_PER_PAGE);
+  const [projectsPerPage, setProjectsPerPage] = useState(4);
 
-  const startIndex = (currentPage - 1) * PROJECTS_PER_PAGE;
-  const currentProjects = projects.slice(startIndex, startIndex + PROJECTS_PER_PAGE);
+  // Handle responsive projects per page
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 768) {
+        setProjectsPerPage(3); // Mobile view
+      } else {
+        setProjectsPerPage(4); // Desktop view
+      }
+    };
+
+    // Initial call
+    handleResize();
+
+    // Listen for resize events
+    window.addEventListener('resize', handleResize);
+    
+    // Cleanup
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  const totalPages = Math.ceil(projects.length / projectsPerPage);
+  const startIndex = (currentPage - 1) * projectsPerPage;
+  const currentProjects = projects.slice(startIndex, startIndex + projectsPerPage);
 
   const handlePageClick = (page) => setCurrentPage(page);
   const handlePrev = () => currentPage > 1 && setCurrentPage((prev) => prev - 1);
