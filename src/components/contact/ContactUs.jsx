@@ -45,19 +45,19 @@ const ContactUs = () => {
           </form>
         </div>
         <div className="bg-[#222224] p-4 md:p-8 space-y-6 rounded-2xl border border-[var(--border)]">
-          <div className="bg-[#2c2c2e] p-4 rounded-3xl">
+          <div className="  rounded-3xl">
             <Map />
           </div>
-          <div className="bg-[#2c2c2e] p-4 rounded-3xl space-y-4">
-            <div className="py-3 px-6 rounded-2xl space-y-2 bg-[var(--secondary)]">
+          <div className=" rounded-3xl space-y-4">
+            <div className="py-3 px-6 rounded-2xl space-y-2 bg-[var(--secondary)] shadow-lg">
               <h4 className='font-medium'>Email</h4>
               <a href="mailto:awaisfaryad25@gmail.com" className='hover:underline'>awaisfaryad25@gmail.com</a>
             </div>
-            <div className="py-3 px-6 rounded-2xl space-y-2 bg-[var(--secondary)]">
+            <div className="py-3 px-6 rounded-2xl space-y-2 bg-[var(--secondary)] shadow-lg">
               <h4 className='font-medium'>Phone Number</h4>
               <a href="tel:+923012525017" className="hover:underline">+92 301 2525017</a>
             </div>
-            <div className="py-3 px-6 rounded-2xl bg-[var(--secondary)]">
+            <div className="py-3 px-6 rounded-2xl bg-[var(--secondary)] shadow-lg">
               <h4 className='font-medium'>Address</h4>
               <address className='hover:underline'>Wapda Town, Lahore</address>
             </div>
