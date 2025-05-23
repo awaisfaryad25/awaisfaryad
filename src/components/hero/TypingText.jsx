@@ -2,7 +2,7 @@ import { Typewriter } from 'react-simple-typewriter';
 
 const TypingText = () => {
   return (
-    <h3 className="text-3xl md:text-5xl text-[var(--primary)] font-bold drop-shadow-[3px_3px_4px_#000000] tracking-wider">
+    <h3 className="text-3xl md:text-5xl text-[var(--primary)] font-bold text-shadow-lg/30 tracking-wider">
       <Typewriter
         words={['Frontend Developer', 'React.js Developer', 'Software Developer']}
         loop={0}

@@ -13,7 +13,7 @@ const Button = ({ title, downloadLink, className = "" }) => {
   return (
     <button
       onClick={handleDownload}
-      className={`px-5 py-2.5 font-semibold rounded-md bg-[var(--secondary)] ${className}`}
+      className={`px-5 py-2.5 font-bold md:font-semibold rounded-md bg-[var(--secondary)] ${className}`}
     >
       {title}
     </button>

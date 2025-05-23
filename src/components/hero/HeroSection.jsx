@@ -18,13 +18,13 @@ const HeroSection = () => (
       style={{ backgroundImage: `url(${banner})`, clipPath: 'polygon(100% 0%, 0% 0%, 0% 100%, 100% 65%)',}}
     />
 
-    <div className="size-full max-w-[85%] md:max-w-[85%] mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-8 text-white py-20">
+    <div className="size-full max-w-[85%] md:max-w-[85%] mx-auto grid grid-cols-1  md:grid-cols-2 items-center md:gap-8 text-white py-20 md:py-16">
       {/* Left Section */}
-      <div className="pt-12">
-        <h1 className="relative text-7xl md:text-9xl font-[Times_New_Roman] drop-shadow-md ">
-          <img src={m} alt="" className="size-12 md:size-20 absolute -top-2 md:top-0 -left-2 md:-left-4" /> awais
+      <div className="pt-12 order-2 md:order-1">
+        <h1 className="relative text-7xl md:text-9xl font-[Times_New_Roman] text-shadow-lg/50  ">
+          <img src={m} alt="" className="size-12 md:size-20 absolute -top-2 md:top-0 -left-2 md:-left-4 " /> awais
         </h1>
-        <h1 className=" text-7xl md:text-8xl leading-[5rem] font-semibold text-[var(--primary)]">FARYAD</h1>
+        <h1 className=" text-7xl md:text-8xl leading-[5rem] font-semibold text-[var(--primary)] ">FARYAD</h1>
         <div className="mt-2 md:mt-6">
           <TypingText/>
         </div>
@@ -44,7 +44,7 @@ const HeroSection = () => (
               <a key={i} href={href} target="_blank"
                 className="p-2 bg-[var(--secondary)]/30 border border-[var(--primary)] rounded-full"
               >
-                <span className="text-[var(--primary)] text-xl">{icon}</span>
+                <span className="text-[var(--primary)] text-xl drop-shadow-2xl">{icon}</span>
               </a>
             ))}
           </div>
@@ -52,7 +52,7 @@ const HeroSection = () => (
       </div>
 
       {/* Right Section - Profile Image */}
-      <div className="flex justify-center md:justify-end">
+      <div className="flex justify-center md:justify-end order-1 md:order-2">
         <div className="w-[27rem]">
           <img src={profile} alt="Profile" className="size-full object-fill" />
         </div>
