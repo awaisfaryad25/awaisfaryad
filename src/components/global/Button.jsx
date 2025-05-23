@@ -13,9 +13,9 @@ const Button = ({ title, downloadLink, className = "" }) => {
   return (
     <button
       onClick={handleDownload}
-      className={`px-5 py-2.5 font-bold md:font-semibold rounded-md bg-[var(--secondary)] ${className}`}
+      className={`px-5 py-1.5 font-bold md:font-semibold shadow-lg rounded-md bg-[var(--secondary)] border border-[var(--primary)] cursor-pointer ${className}`}
     >
-      {title}
+      <span className="text-shadow-lg/30">{title}</span>
     </button>
   );
 };

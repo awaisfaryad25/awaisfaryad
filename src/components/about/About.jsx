@@ -1,8 +1,12 @@
 
 import profile from '../../assets/about/about.png'
 import Button from '../global/Button'
+import CV from '../../assets/documents/AwaisFaryad.pdf'
 
 const About = () => {
+
+  const pdfPath = "/documents/AwaisFaryad.pdf";
+
   return (
     <>
       <div className="max-w-[85%] mx-auto p-4 md:px-12 font-sans space-y-4 md:space-y-8 bg-[#1d1d1e] rounded-2xl border border-[var(--border)]">
@@ -26,7 +30,7 @@ const About = () => {
               I thrive on tackling challenges and pushing the boundaries of web development 
               through creativity and innovation.
             </p>
-            <Button title="Download CV" downloadLink="/documents/Awais-Faryad.pdf" />
+            <Button title="Download CV" downloadLink={CV || pdfPath} />
           </div>
         </div>
       </div>

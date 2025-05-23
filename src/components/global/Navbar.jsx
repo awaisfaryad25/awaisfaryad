@@ -36,7 +36,7 @@ const Navbar = () => {
           <ul className="hidden md:flex space-x-6 font-medium">
             {menuItems.map((item) => (
               <li key={item.name} className="hover:text-[var(--primary)] cursor-pointer ">
-                <Link to={item.path} className={`hover:text-[var(--primary)] ${isActive(item.path) ? 'pb-1 pt-0.5 shadow-lg px-3 rounded-full bg-[var(--secondary)] text-[var(--primar)] hover:text-white' : ''}`}>
+                <Link to={item.path} className={`hover:text-[var(--primary)] ${isActive(item.path) ? 'pb-1 pt-0.5 shadow-lg px-3 rounded-full bg-[var(--secondary)] text-[var(--primar)] hover:text-white border border-[var(--primary)]' : ''}`}>
                   <span className='text-shadow-lg/30'>{item.name}</span>
                 </Link>
               </li>

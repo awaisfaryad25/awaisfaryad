@@ -31,12 +31,12 @@ const MobileMenu = ({ isOpen, setIsOpen, menuItems, currentPath }) => {
           <button onClick={() => setIsOpen(false)}><IoIosClose size={40} /></button>
         </div>
 
-        <ul className="flex flex-col space-y-6 pl-6 py-4 text-lg font-medium">
+        <ul className="flex flex-col space-y-4 pl-6 py-4 text-base font-medium">
           {menuItems.map((item) => (
             <Link key={item.name} to={item.path}
               onClick={() => setIsOpen(false)}
-              className={`text-xl hover:text-[var(--primary)] font-bold 
-                ${ isActive(item.path) ? 'text-[var(--primar)] bg-[var(--secondary)] py-2 px-8 rounded-l-full font-bold shadow-lg' : 'px-8'}`}
+              className={` hover:text-[var(--primary)] font-bold cursor-pointer
+                ${ isActive(item.path) ? 'border border-[var(--primary)] text-[var(--primar)] bg-[var(--secondary)] py-2 px-8 rounded-l-full font-bold shadow-lg' : 'px-8'}`}
             >
               <span className='text-shadow-lg/30'>{item.name}</span>
             </Link>
@@ -46,7 +46,7 @@ const MobileMenu = ({ isOpen, setIsOpen, menuItems, currentPath }) => {
           </li>
         </ul>
         <div className="pr-6">
-          <Button title="Login / Sign" className="w-full text-end pr-8 rounded-r-full"/>
+          <Button title="Login / Sign" className="w-full text-base text-end pr-8 py-2 rounded-r-full"/>
         </div>
       </div>
     </div>
