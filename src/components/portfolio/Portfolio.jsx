@@ -3,7 +3,7 @@ import ProjectCard from './ProjectCard';
 import projects from '../../constants/projectsData';
 import PaginationControls from '../global/PaginationControls';
 
-const Portfolio = () => {
+const Portfolio = ({id}) => {
 
   const [currentPage, setCurrentPage] = useState(1);
   const [projectsPerPage, setProjectsPerPage] = useState(4);
@@ -30,7 +30,7 @@ const Portfolio = () => {
   const handleNext = () => currentPage < totalPages && setCurrentPage((prev) => prev + 1);
 
   return (
-    <div className="max-w-[85%] mx-auto px-4 py-12 md:px-8 font-sans space-y-8 bg-[#1d1d1e] rounded-2xl border border-[var(--border)]">
+    <div id={id} className="max-w-[85%] mx-auto px-4 py-12 md:px-8 font-sans space-y-8 bg-[#1d1d1e] rounded-2xl border border-[var(--border)]">
       <div className="text-center">
         <h2 className="text-xl font-bold text-[var(--primary)] mb-2 md:mb-4">My Portfolio</h2>
         <h3 className="text-white text-lg">Projects I've built for my clients</h3>

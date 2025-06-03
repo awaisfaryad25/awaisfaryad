@@ -3,13 +3,13 @@ import profile from '../../assets/about/about.png'
 import Button from '../global/Button'
 import CV from '../../assets/documents/AwaisFaryad.pdf'
 
-const About = () => {
+const About = ( {id} ) => {
 
   const pdfPath = "/documents/AwaisFaryad.pdf";
 
   return (
-    <>
-      <div className="max-w-[85%] mx-auto p-4 md:px-12 font-sans space-y-4 md:space-y-8 bg-[#1d1d1e] rounded-2xl border border-[var(--border)]">
+    <section id={id}>
+      <div  className="max-w-[85%] mx-auto p-4 md:px-12 font-sans space-y-4 md:space-y-8 bg-[#1d1d1e] rounded-2xl border border-[var(--border)]">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 py-6 md:py-12">
           <div className="">
             <div className="w-ful max-w-60 md:max-w-80 mx-auto">
@@ -34,7 +34,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </>
+    </section>
   )
 }
 
