@@ -72,7 +72,7 @@ const Navbar = () => {
           </div>
 
           <div className="md:hidden text-[var(--primary)]">
-            <button onClick={() => setIsOpen(true)}>
+            <button onClick={() => setIsOpen(true)} className="drop-shadow-[2px_3px_1px_#000000]">
               <IoIosMenu size={32} />
             </button>
           </div>
