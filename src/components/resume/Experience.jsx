@@ -11,7 +11,7 @@ const Experience = () => {
           <span className="absolute flex items-center justify-center size-8 bg-[var(--border)] rounded-full -start-4 ">
             <FaBriefcase  className='text-[var(--primary)]'/>
           </span>
-          <div className="flex items-center justify-between">
+          <div className="flex flex-wrap items-center justify-between mb-2 md:mb-0">
             <h3 className="mb-1 text-lg font-semibold">Associate Software Developer</h3>
             <h4 className='text-sm'>Sep 2024 – Present</h4>
           </div>
@@ -31,7 +31,7 @@ const Experience = () => {
           <span className="absolute flex items-center justify-center size-8 bg-[var(--border)] rounded-full -start-4 ">
             <FaBriefcase  className='text-[var(--primary)]'/>
           </span>
-          <div className="flex items-center justify-between">
+          <div className="flex flex-wrap items-center justify-between mb-2 md:mb-0">
             <h3 className="mb-1 text-lg font-semibold ">Frontend Developer Intern</h3>
             <h4 className='text-sm'>Nov 2023 – Apr 2024</h4>
           </div>
