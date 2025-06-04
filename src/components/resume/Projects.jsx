@@ -1,26 +1,81 @@
-import { FaProjectDiagram } from 'react-icons/fa';
-import { BsFillFolderFill } from 'react-icons/bs';
-import { MdOutlineWork } from 'react-icons/md';
+import { FaProjectDiagram, FaLink } from 'react-icons/fa';
 import { AiFillFolderOpen } from 'react-icons/ai';
-import { VscFolderActive } from 'react-icons/vsc';
-import { GoProject } from 'react-icons/go';
 
+const projects = [
+  {
+    icon: <FaProjectDiagram className="text-[var(--primary)]" />,
+    title: 'Trade Today',
+    description: 'AI-powered crypto insights platform',
+    link: 'https://tradetoday.io/',
+    details: 'Engineered TradeToday, an AI-driven web app delivering real-time crypto market insights to empower users with smarter trading opportunities.',
+  },
+  {
+    icon: <AiFillFolderOpen className="text-[var(--primary)]" />,
+    title: 'Code Miner',
+    description: 'Official company website',
+    link: 'https://codeminer.co/',
+    details: 'Designed and developed official website for Code Miner, the company I work for, highlighting its software services, projects, and providing an interface for client communication.',
+  },
+  {
+    icon: <AiFillFolderOpen className="text-[var(--primary)]" />,
+    title: 'GHS&E',
+    description: 'Greenhouse Solar and Electrical',
+    link: 'https://ghse.com.au/',
+    details: 'Built a web app for GHS%E, a solar installation company, with service listings, project showcases, inquiry forms, and an admin panel for managing services and client requests.',
+  },
+  {
+    icon: <AiFillFolderOpen className="text-[var(--primary)]" />,
+    title: 'Helper Log',
+    description: 'Super Admin Panel',
+    link: 'https://helperlog.helpoutweb.com/',
+    details: 'Contributed to a shipment management dashboard, implementing Manifest, PO, and Invoice management, along with Agent/Runner modules and secure Super Admin',
+  },
+  {
+    icon: <AiFillFolderOpen className="text-[var(--primary)]" />,
+    title: 'GPP',
+    description: 'GhoomoPhiroo Pakistan',
+    link: 'http://www.ghoomophiroo.com/',
+    details: 'Built a user-friendly tourist web application for exploring and booking travel experiences across Pakistan, featuring trip bookings, lucky draw systems, destination management, and an admin panel for seamless backend operations.',
+  },
+  {
+    icon: <AiFillFolderOpen className="text-[var(--primary)]" />,
+    title: 'Finarch',
+    description: 'Architectural Web App',
+    link: 'http://www.finarch.co',
+    details: 'Developed a responsive and feature-rich architectural web app with dynamic data management, interactive components, and a seamless user experience.',
+  },
+];
 
 const Projects = () => {
   return (
     <div>
       <h2 className="text-2xl font-semibold mb-2">Projects</h2>
-      <hr className='mb-3'/>
-      <ul className="list-disc list-inside space-y-2">
-        <li><strong>Trade Today:</strong> AI-powered crypto insights platform. [<a href="https://tradetoday.io/" className="text-blue-500">Visit</a>]</li>
-        <li><strong>Code Miner:</strong> Official company website. [<a href="https://codeminer.co/" className="text-blue-500">Visit</a>]</li>
-        <li><strong>GHS&E:</strong> Solar installation service site. [<a href="https://ghse.com.au/" className="text-blue-500">Visit</a>]</li>
-        <li><strong>Helper Log:</strong> Shipment management dashboard. [<a href="https://helperlog.helpoutweb.com/" className="text-blue-500">Visit</a>]</li>
-        <li><strong>GhoomoPhiroo Pakistan:</strong> Travel and booking app. [<a href="https://ghoomophiroo.com/" className="text-blue-500">Visit</a>]</li>
-        <li><strong>Finarch:</strong> Architectural web app. [<a href="https://finarch.co/" className="text-blue-500">Visit</a>]</li>
-      </ul>
+      <hr className="mb-3" />
+      <ol className="relative border-s border-[var(--border)] dark:border-gray-70">
+        {projects.map((project, index) => (
+          <li key={index} className="mb-10 ms-6">
+            <span className="absolute flex items-center justify-center size-8 bg-[var(--border)] rounded-full -start-4">
+              {project.icon}
+            </span>
+            <div className="flex items-center gap-3">
+              <h3 className="text-lg font-semibold">{project.title}</h3>
+              <a href={project.link} target="_blank" rel="noopener noreferrer"
+                className="text-blue-500 text-sm underline"
+              >
+                <FaLink />
+              </a>
+            </div>
+            <p className="text-sm mb-1">{project.description}</p>
+            {project.details && (
+              <ul>
+                <li>{project.details}</li>
+              </ul>
+            )}
+          </li>
+        ))}
+      </ol>
     </div>
-  )
-}
+  );
+};
 
-export default Projects
+export default Projects;
