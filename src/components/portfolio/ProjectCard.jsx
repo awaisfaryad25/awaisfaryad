@@ -1,7 +1,5 @@
 // components/ProjectCard.jsx
 
-// components/ProjectCard.jsx
-
 import { FaEye, FaExternalLinkAlt } from 'react-icons/fa';
 
 const ProjectCard = ({ project }) => {
