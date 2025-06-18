@@ -1,42 +1,28 @@
 // src/data/projectsData.js
-import TradeToday from '../assets/tradeToday/tradetoday.png';
-import TradeLanding from '../assets/tradeToday/tradeLandingPage.png'
-import TradeAdminHome from '../assets/tradeToday/tradeAdminHome.png'
-import TradeAdminMarket from '../assets/tradeToday/tradeAdminMarket.png'
-import TradeAdminPredict from '../assets/tradeToday/tradeAdminPredict.png'
-
-import CodeMiner from '../assets/projects/codeminer.png';
-import GPP from '../assets/projects/gpp.png';
-import Helperlog from '../assets/projects/helperlog.png';
-import GHSE from '../assets/projects/ghse.png';
-import Finarch from '../assets/projects/finarch.png';
-import Branddekho from '../assets/projects/branddekho.png';
-import GPS from '../assets/projects/gps.png';
-import Rungley from '../assets/projects/rungley.png';
-
+import { projectImages } from './projectImages';
 const projects = [
   {
     id: 1,
     title: 'TradeToday',
     description: 'AI-powered crypto insights platform',
     tech: ['React', 'Node.js', 'Tailwind CSS'],
-    image: TradeToday,
-    link: '#',
+    image: projectImages.TradeToday.main,
+    link: 'www.tradetoday.io',
     extraDetails: [
       'Real-time market data integration with WebSocket for live crypto price updates.',
       'Custom AI algorithms for predictive market trends and user insights.',
       'Responsive dashboard with advanced charting tools.'
     ],
-    webImages: [TradeLanding, ],
-    adminImages: [TradeAdminHome, TradeAdminMarket, TradeAdminPredict]
+    webImages: projectImages.TradeToday.webImages,
+    adminImages: projectImages.TradeToday.adminImages,
   },
   {
     id:2,
     title: 'Code Miner',
     description: 'Official company website',
     tech: ['Wordpress', 'css',],
-    image: CodeMiner,
-    link: '#',
+    image: projectImages.CodeMiner.main,
+    link: 'codeminer.co',
     extraDetails: [],
     webImages: [],
     adminImages: []
@@ -46,7 +32,7 @@ const projects = [
     title: 'GPP (Ghoomo Phiroo Pakistan)',
     description: 'A travel and booking platform offering destination browsing, user login, and online payments.',
     tech: ['React', 'Node.js', 'Tailwind CSS'],
-    image: GPP,
+    image: projectImages.GPP.main,
     link: '#',
     extraDetails: [],
     webImages: [],
@@ -57,8 +43,8 @@ const projects = [
     title: 'HelperLog',
     description: 'A logistics dashboard for managing shipments, tracking parcels, and updating delivery statuses.',
     tech: ['React', 'Node.js', 'MongoDB'],
-    image: Helperlog,
-    link: '#',
+    image: projectImages.Helperlog.main,
+    link: 'helperlog.helpoutweb.com',
     extraDetails: [],
     webImages: [],
     adminImages: []
@@ -68,7 +54,7 @@ const projects = [
     title: 'GHS&E',
     description: 'A solar installation service website showcasing packages, inquiry forms, and company portfolio.',
     tech: ['React', 'Tailwind', 'Vite'],
-    image: GHSE,
+    image: projectImages.GHSE.main,
     link: '#',
     extraDetails: [],
     webImages: [],
@@ -79,8 +65,8 @@ const projects = [
     title: 'Finarch',
     description: 'A solar installation service website showcasing packages, inquiry forms, and company portfolio.',
     tech: ['React', 'Tailwind', 'Vite'],
-    image: Finarch,
-    link: '#',
+    image: projectImages.Finarch.main,
+    link: 'finarch.co',
     extraDetails: [],
     webImages: [],
     adminImages: []
@@ -90,7 +76,7 @@ const projects = [
     title: 'Branddekho.Ai',
     description: '',
     tech: ['React', 'Tailwind', 'Vite'],
-    image: Branddekho,
+    image: projectImages.Branddekho.main,
     link: '#',
     extraDetails: [],
     webImages: [],
@@ -101,7 +87,7 @@ const projects = [
     title: 'GPS',
     description: '',
     tech: ['React', 'Tailwind', 'Vite'],
-    image: GPS,
+    image: projectImages.GPS.main,
     link: '#',
     extraDetails: [],
     webImages: [],
@@ -112,7 +98,7 @@ const projects = [
     title: 'Rungley',
     description: '',
     tech: ['React', 'Tailwind', 'Vite'],
-    image: Rungley,
+    image: projectImages.Rungley.main,
     link: '#',
     extraDetails: [],
     webImages: [],

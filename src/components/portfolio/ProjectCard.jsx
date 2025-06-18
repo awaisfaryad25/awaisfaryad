@@ -12,23 +12,21 @@ const ProjectCard = ({ project }) => {
           className="size-full object-contain transform group-hover:scale-105 transition duration-300"
         />
         {/* Overlay with icons on image hover */}
-        <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex justify-center items-center gap-4">
-          <a
-            href={`/project/${project.id}`}
-            className="inline-flex items-center bg-[var(--primary)] text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-opacity-90 transition"
-            title="View Detail"
+        <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex justify-center items-center gap-4">
+          <a href={`/project/${project.id}`} title="View Detail"
+            className="inline-flex items-center text-[var(--primary)] bg-[#2e2e30] p-4 rounded-lg text-sm font-medium hover:bg-opacity-90 transition"
           >
-            <FaEye className="text-lg" />
+            <FaEye className="text-2xl" />
           </a>
           {project.link && (
             <a
               href={project.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center bg-[#2e2e30] text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-opacity-90 transition"
+              className="inline-flex items-center bg-[#2e2e30] text-white p-4.5  rounded-lg text-sm font-medium hover:bg-opacity-90 transition"
               title="Visit Project"
             >
-              <FaExternalLinkAlt className="text-lg" />
+              <FaExternalLinkAlt className="text-xl" />
             </a>
           )}
         </div>
@@ -45,11 +43,9 @@ const ProjectCard = ({ project }) => {
             </span>
           ))}
         </div>
-        
       </div>
     </div>
   );
 };
 
 export default ProjectCard;
-

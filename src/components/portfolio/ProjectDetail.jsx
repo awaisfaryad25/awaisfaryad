@@ -20,6 +20,13 @@ const ProjectDetail = () => {
     );
   }
 
+  const getFullUrl = (url) => {
+    if (!url.match(/^https?:\/\//)) {
+      return `https://${url}`;
+    }
+    return url;
+  };
+
   return (
     <div className="max-w-[85%] mx-auto px-4 py-6 my-20 md:px-8 font-sans bg-[#1d1d1e] rounded-2xl border border-[var(--border)] text-white space-y-8">
       <div className="flex items-center justify-between">
@@ -27,7 +34,7 @@ const ProjectDetail = () => {
         <h2 className="text-2xl font-bold text-[var(--primary)] mb-2">{project.title}</h2>
         {project.link && (
           <div>
-            <a href={project.link} target="_blank" rel="noopener noreferrer"
+            <a href={getFullUrl(project.link)} target="_blank" rel="noopener noreferrer"
               className="inline-flex items-center bg-[#2e2e30] text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-opacity-90 transition"
             >
               <FaExternalLinkAlt className="mr-2" /> Visit Project
@@ -52,8 +59,8 @@ const ProjectDetail = () => {
           </div>
 
           {project.webImages && project.webImages.length > 0 && (
-            <div>
-              <h3 className="text-lg font-semibold text-[var(--primary)]">Web Screenshots</h3>
+            <div className='text-center'>
+              <h2 className="text-2xl font-semibold text-[var(--primary)] mb-2">Web Screenshots</h2>
               <div className="space-y-8 gap-4">
                 {project.webImages.map((image, index) => (
                   <img key={index} src={image} alt={project.title} className="w-full object-contain" />
@@ -62,8 +69,8 @@ const ProjectDetail = () => {
             </div>
           )}
           {project.adminImages && project.adminImages.length > 0 && (
-            <div>
-              <h3 className="text-lg font-semibold text-[var(--primary)] mb-3">Admin Screenshots</h3>
+            <div className='text-center'>
+              <h2 className="text-2xl font-semibold text-[var(--primary)] mb-2">Admin Screenshots</h2>
               <div className="space-y-8 gap-4">
                 {project.adminImages.map((image, index) => (
                   <img key={index} src={image} alt={project.title} className="w-full object-contain" />
