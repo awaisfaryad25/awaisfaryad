@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/project/:id*",
+      "destination": "/"
+    },
+    {
+      "source": "/resume",
+      "destination": "/"
+    }
+  ]
+}
