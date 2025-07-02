@@ -1,4 +1,16 @@
 // src/assets/projectImages.js
+// InspiredEdible Images
+import InspiredEdible from '../assets/inspiredEdible/inspireEdibles.png';
+import BlogMode from '../assets/inspiredEdible/BlogMode.png';
+import BoomerMode from '../assets/inspiredEdible/BoomerMode.png';
+import WebRings from '../assets/inspiredEdible/web-rings.png';
+import CrtRed from '../assets/inspiredEdible/crt-red.png';
+import CrtGreen from '../assets/inspiredEdible/crt-green.png';
+import Admin from '../assets/inspiredEdible/admin.png';
+import AdminBlog from '../assets/inspiredEdible/adminBlog.png';
+import EditBlog from '../assets/inspiredEdible/editBlog.png';
+import AddSocial from '../assets/inspiredEdible/addSocial.png';
+
 // TradeToday Images
 import TradeToday from '../assets/tradeToday/tradetoday.png';
 import TradeLanding from '../assets/tradeToday/tradeLandingPage.png';
@@ -17,6 +29,11 @@ import GPS from '../assets/projects/gps.png';
 import Rungley from '../assets/projects/rungley.png';
 
 export const projectImages = {
+  InspiredEdibles: {
+    main: InspiredEdible,
+    webImages: [BlogMode, BoomerMode, WebRings, CrtRed, CrtGreen],
+    adminImages: [Admin, AdminBlog, EditBlog, AddSocial],
+  },
   TradeToday: {
     main: TradeToday,
     webImages: [TradeLanding],
