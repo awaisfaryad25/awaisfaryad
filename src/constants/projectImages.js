@@ -29,51 +29,6 @@ import GPS from '../assets/projects/gps.png';
 import Rungley from '../assets/projects/rungley.png';
 
 export const projectImages = {
-  InspiredEdibles: {
-    main: InspiredEdible,
-    webImages: [BlogMode, BoomerMode, WebRings, CrtRed, CrtGreen],
-    adminImages: [Admin, AdminBlog, EditBlog, AddSocial],
-  },
-  TradeToday: {
-    main: TradeToday,
-    webImages: [TradeLanding],
-    adminImages: [TradeAdminHome, TradeAdminMarket, TradeAdminPredict],
-  },
-  CodeMiner: {
-    main: CodeMiner,
-    webImages: [],
-    adminImages: [],
-  },
-  GPP: {
-    main: GPP,
-    webImages: [],
-    adminImages: [],
-  },
-  Helperlog: {
-    main: Helperlog,
-    webImages: [],
-    adminImages: [],
-  },
-  GHSE: {
-    main: GHSE,
-    webImages: [],
-    adminImages: [],
-  },
-  Finarch: {
-    main: Finarch,
-    webImages: [],
-    adminImages: [],
-  },
-  Branddekho: {
-    main: Branddekho,
-    webImages: [],
-    adminImages: [],
-  },
-  GPS: {
-    main: GPS,
-    webImages: [],
-    adminImages: [],
-  },
   Rungley: {
     main: Rungley,
     webImages: [],
