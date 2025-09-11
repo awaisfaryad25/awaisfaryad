@@ -59,8 +59,8 @@ const Footer = () => {
             <strong className="text-white">Get In Touch</strong>
             <div className="mt-2 text-white">
               {/* Add contact details or form */}
-              <p>Email: example@email.com</p>
-              <p>Phone: +123-456-7890</p>
+              <p>Email: awaisfaryad25@gmail.com</p>
+              <p>Phone: +923012525017</p>
             </div>
           </div>
         </div>
