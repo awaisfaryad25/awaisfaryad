@@ -57,15 +57,25 @@ const Footer = () => {
           {/* Contact Section */}
           <div>
             <strong className="text-white">Get In Touch</strong>
-            <div className="mt-2 text-white">
-              {/* Add contact details or form */}
-              <p>Email: awaisfaryad25@gmail.com</p>
-              <p>Phone: +923012525017</p>
+            <div className="mt-2 text-white space-y-1">
+              <p>
+                Email:{" "}
+                <a href="mailto:awaisfaryad25@gmail.com" className="text-blue-400 hover:underline">
+                  awaisfaryad25@gmail.com
+                </a>
+              </p>
+              <p>
+                Phone:{" "}
+                <a href="tel:+923012525017" className="text-blue-400 hover:underline">
+                  +92 301 2525017
+                </a>
+              </p>
             </div>
           </div>
         </div>
 
         <hr className="my-0 w-4/5 mx-auto border-gray-600" />
+        
         <div className="text-center py-4 text-white">
           <span>© 2025 Awais Faryad. All Rights Reserved</span>
         </div>
