@@ -5,7 +5,7 @@ import service from '../../constants/serviceData';
 const Services = ({id}) => {
 
   return (
-    <div id={id} className="max-w-[85%] mx-auto px-4 py-12 md:px-12 font-sans space-y-4 md:space-y-8 bg-[#1d1d1e] rounded-2xl border border-[var(--border)]">
+    <div id={id} className="max-w-[85%] md:max-w-[1280px] mx-auto px-4 py-12 md:px-12 font-sans space-y-4 md:space-y-8 bg-[#1d1d1e] rounded-2xl border border-[var(--border)]">
       <div className="text-center">
         <h2 className="text-xl font-bold text-[var(--primary)] mb-3 md:mb-4">Services</h2>
         <h3>What I'm doing</h3>

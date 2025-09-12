@@ -13,12 +13,12 @@ const socials = [
 ];
 
 const HeroSection = () => (
-  <div className="relative w-full overflow-hidden">
+  <div className="relative w-full overflow-hidden ">
     <div className="absolute inset-0 -z-10 bg-cover bg-center"
       style={{ backgroundImage: `url(${banner})`, clipPath: 'polygon(100% 0%, 0% 0%, 0% 100%, 100% 65%)',}}
     />
 
-    <div className="size-full max-w-[85%] md:max-w-[85%] mx-auto grid grid-cols-1  md:grid-cols-2 items-center md:gap-8 text-white py-20 md:py-16">
+    <div className="size-full max-w-[] md:max-w-[1280px] mx-auto grid grid-cols-1  md:grid-cols-2 items-center md:gap-8 text-white py-20 md:py-16">
       {/* Left Section */}
       <div className="pt-12 order-2 md:order-1">
         <h1 className="relative text-7xl md:text-9xl font-[Times_New_Roman] text-shadow-lg/50  ">
