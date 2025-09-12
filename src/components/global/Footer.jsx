@@ -60,15 +60,11 @@ const Footer = () => {
             <div className="mt-2 text-white space-y-1">
               <p>
                 Email:{" "}
-                <a href="mailto:awaisfaryad25@gmail.com" className=" hover:underline">
-                  awaisfaryad25@gmail.com
-                </a>
+                <a href="mailto:awaisfaryad25@gmail.com" className=" hover:underline">awaisfaryad25@gmail.com</a>
               </p>
               <p>
                 Phone:{" "}
-                <a href="tel:+923012525017" className=" hover:underline">
-                  +92 301 2525017
-                </a>
+                <a href="tel:+923012525017" className=" hover:underline">+92 301 2525017</a>
               </p>
             </div>
           </div>
