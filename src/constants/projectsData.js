@@ -12,6 +12,17 @@ const projects = [
     webImages: [],
     adminImages: []
   },
+  {
+    id: 2,
+    title: 'Helper Log',
+    description: '',
+    tech: ['React', 'Tailwind', 'Vite'],
+    image: projectImages.HelperLog.main,
+    link: '#',
+    extraDetails: [],
+    webImages: [],
+    adminImages: []
+  },
 
 ];
 
