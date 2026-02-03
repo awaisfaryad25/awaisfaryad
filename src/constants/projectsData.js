@@ -25,6 +25,17 @@ const projects = [
   },
   {
     id: 3,
+    title: 'GHSE',
+    description: '',
+    tech: ['React', 'Tailwind', 'Vite'],
+    image: projectImages.GHSE.main,
+    link: '#',
+    extraDetails: [],
+    webImages: [],
+    adminImages: []
+  },
+  {
+    id: 4,
     title: 'Rungley',
     description: '',
     tech: ['React', 'Tailwind', 'Vite'],
