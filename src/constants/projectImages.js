@@ -5,6 +5,7 @@
 
 // Other Project Images
 import Finarch from '../assets/projects/finarch.png';
+import GHSE from '../assets/projects/ghse.png';
 import Rungley from '../assets/projects/rungley.png';
 import Helperlog from '../assets/projects/helperlog.png';
 
@@ -14,15 +15,20 @@ export const projectImages = {
     webImages: [],
     adminImages: [],
   },
-
-  Rungley: {
-    main: Rungley,
+  GHSE: {
+    main: GHSE,
     webImages: [],
     adminImages: [],
   },
 
   HelperLog: {
     main: Helperlog,
+    webImages: [],
+    adminImages: [],
+  },
+
+    Rungley: {
+    main: Rungley,
     webImages: [],
     adminImages: [],
   },
