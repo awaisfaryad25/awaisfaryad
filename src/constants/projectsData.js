@@ -3,10 +3,10 @@ import { projectImages } from './projectImages';
 const projects = [
   {
     id: 1,
-    title: 'Rungley',
+    title: 'Finarch',
     description: '',
     tech: ['React', 'Tailwind', 'Vite'],
-    image: projectImages.Rungley.main,
+    image: projectImages.Finarch.main,
     link: '#',
     extraDetails: [],
     webImages: [],
@@ -18,6 +18,17 @@ const projects = [
     description: '',
     tech: ['React', 'Tailwind', 'Vite'],
     image: projectImages.HelperLog.main,
+    link: '#',
+    extraDetails: [],
+    webImages: [],
+    adminImages: []
+  },
+  {
+    id: 3,
+    title: 'Rungley',
+    description: '',
+    tech: ['React', 'Tailwind', 'Vite'],
+    image: projectImages.Rungley.main,
     link: '#',
     extraDetails: [],
     webImages: [],
